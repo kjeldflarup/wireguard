@@ -1,0 +1,7 @@
+
+sudo mv peer1.conf /etc/wireguard/
+sudo chmod 600 /etc/wireguard/peer1.conf
+
+sudo apt install network-manager wireguard-tools -y
+sudo nmcli connection import type wireguard file /etc/wireguard/peer1.conf
+
